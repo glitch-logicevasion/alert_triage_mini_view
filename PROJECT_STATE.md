@@ -4,14 +4,14 @@
 
 ## Current Phase
 
-**Ready for Phase 6 — SQL + C# production artifacts**
+**Ready for Phase 7 — README, screen recording readiness, polish**
 
-Phase 5 is complete.
+Phase 6 is complete.
 
 The immediate next action is:
 
 ```text
-Begin Phase 6 — SQL + C# production artifacts
+Begin Phase 7 — README, screen recording readiness, polish
 ```
 
 ## Completed Implementation Phases
@@ -22,6 +22,7 @@ Begin Phase 6 — SQL + C# production artifacts
 * Phase 3 — Filter/search/sort logic
 * Phase 4 — Detail panel and in-memory status update
 * Phase 5 — SOC UX improvement
+* Phase 6 — SQL + C# production artifacts
 
 ## Known Working Features
 
@@ -75,6 +76,17 @@ Begin Phase 6 — SQL + C# production artifacts
 * Summary counts update after filters, search, and status changes.
 * Summary cards are informational only and not clickable.
 * Existing filter/search/sort/detail/status behavior is preserved.
+* Docs-only SQL artifact exists at `docs/status-update.sql`.
+* Docs-only C# endpoint artifact exists at `docs/status-update-endpoint.cs`.
+* SQL artifact includes an `alerts` table sketch.
+* SQL artifact includes an `alert_status_history` table sketch for auditability.
+* SQL artifact includes a parameterized optimistic-concurrency status update query.
+* SQL artifact includes a status history insert query.
+* C# artifact sketches `PATCH /api/alerts/{id}/status`.
+* C# artifact includes `UpdateAlertStatusRequest` and `AlertStatusResponse` DTOs.
+* C# artifact includes server-side status validation for backend enum values.
+* C# artifact includes RBAC, tenant scope, audit logging, and optimistic concurrency placeholders.
+* Backend artifacts are documentation only and are not called by the running frontend.
 
 ## Chosen SOC UX Improvement
 
@@ -88,7 +100,7 @@ SOC analysts need quick queue-level context so they can prioritize high-risk unr
 
 ## Validation Results
 
-Phase 5 validation completed:
+Phase 6 validation completed:
 
 ```bash
 npm run lint
@@ -96,6 +108,24 @@ npm run build
 ```
 
 Both commands completed successfully.
+
+Manual Phase 6 verification checklist:
+
+* `docs/status-update.sql` exists.
+* `docs/status-update-endpoint.cs` exists.
+* SQL file includes `alerts` table sketch.
+* SQL file includes `alert_status_history` table sketch.
+* SQL file includes parameterized optimistic-concurrency status update query.
+* SQL file includes audit/history insert.
+* SQL notes mention parameterization, RBAC, tenant scope, auditability, and optimistic concurrency.
+* C# file sketches `PATCH /api/alerts/{id}/status`.
+* C# file includes `UpdateAlertStatusRequest`.
+* C# file includes `AlertStatusResponse`.
+* C# file includes status validation.
+* C# file includes authenticated user, tenant scope, RBAC, audit logging, and optimistic concurrency placeholders.
+* Docs clearly say these are production sketches and are not called by the current frontend.
+* Frontend behavior was not changed.
+* README was not updated.
 
 Manual Phase 5 verification checklist:
 
@@ -164,8 +194,8 @@ Manual data verification completed:
 
 ## Known Issues
 
-* No backend production artifacts exist yet.
-* Existing npm dependency audit findings remain unchanged. No audit fix was run because dependency changes are outside Phase 5 scope.
+* README has not yet been updated for final reviewer-facing submission.
+* Existing npm dependency audit findings remain unchanged. No audit fix was run because dependency changes are outside Phase 6 scope.
 
 ## AI Usage Notes
 
@@ -190,6 +220,9 @@ Manual data verification completed:
 * Codex expanded `alertSummary.ts` to calculate visible-set summary counts and reused `isStaleOpenAlert()`.
 * Codex kept summary cards informational only and did not add clickable card filters or chart dependencies.
 * Codex did not change README, add backend/API/localStorage, or continue into Phase 6.
+* Codex implemented Phase 6 as documentation-only backend production sketches.
+* Codex created exactly the requested SQL and C# artifact files under `docs/`.
+* Codex did not wire the artifacts into the frontend or add backend project files, API routes, dependencies, Docker, localStorage, or README changes.
 
 ## Planning Decisions Made
 
