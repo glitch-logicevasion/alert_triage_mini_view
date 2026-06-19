@@ -1,0 +1,130 @@
+.tableScroll {
+  max-height: 68vh;
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+  color: #d9e4f2;
+  font-size: 0.9rem;
+}
+
+.table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid #26364f;
+  background: #101d31;
+  color: #92a7c2;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 12px 16px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.table td {
+  border-bottom: 1px solid #17253a;
+  padding: 14px 16px;
+  vertical-align: middle;
+}
+
+.table tbody tr {
+  background: #0c1728;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #0f1b2e;
+}
+
+.table tbody tr:hover {
+  background: #13243a;
+}
+
+.alertId {
+  color: #7e91aa;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.82rem;
+}
+
+.titleCell {
+  min-width: 280px;
+  color: #f1f6ff;
+  font-weight: 600;
+}
+
+.unassigned {
+  color: #8ea4c0;
+  font-style: italic;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.severityCritical {
+  border-color: rgba(255, 97, 97, 0.48);
+  background: rgba(180, 35, 35, 0.22);
+  color: #ffb4b4;
+}
+
+.severityHigh {
+  border-color: rgba(255, 151, 67, 0.45);
+  background: rgba(184, 87, 30, 0.2);
+  color: #ffc799;
+}
+
+.severityMedium {
+  border-color: rgba(238, 203, 90, 0.42);
+  background: rgba(145, 116, 32, 0.2);
+  color: #f5df8f;
+}
+
+.severityLow {
+  border-color: rgba(94, 203, 139, 0.38);
+  background: rgba(39, 124, 80, 0.2);
+  color: #9ee4bd;
+}
+
+.statusOpen {
+  border-color: rgba(91, 163, 255, 0.42);
+  background: rgba(35, 95, 170, 0.22);
+  color: #afd0ff;
+}
+
+.statusInProgress {
+  border-color: rgba(139, 122, 255, 0.42);
+  background: rgba(83, 70, 180, 0.22);
+  color: #c9c2ff;
+}
+
+.statusResolved {
+  border-color: rgba(94, 203, 139, 0.38);
+  background: rgba(39, 124, 80, 0.2);
+  color: #9ee4bd;
+}
+
+.statusFalsePositive {
+  border-color: rgba(142, 164, 192, 0.32);
+  background: rgba(142, 164, 192, 0.14);
+  color: #c3cedc;
+}
+
+.emptyState {
+  margin: 0;
+  padding: 40px 24px;
+  color: #8ea4c0;
+  text-align: center;
+}

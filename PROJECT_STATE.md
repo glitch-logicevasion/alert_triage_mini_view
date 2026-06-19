@@ -4,20 +4,21 @@
 
 ## Current Phase
 
-**Ready for Phase 2 — Core layout and alert table**
+**Ready for Phase 3 — Filter/search/sort logic**
 
-Phase 1 is complete.
+Phase 2 is complete.
 
 The immediate next action is:
 
 ```text
-Begin Phase 2 — Core layout and alert table
+Begin Phase 3 — Filter/search/sort logic
 ```
 
 ## Completed Implementation Phases
 
 * Phase 0 — Repo/bootstrap and scaffold
 * Phase 1 — Mock alert data and TypeScript model
+* Phase 2 — Core layout and alert table
 
 ## Known Working Features
 
@@ -32,16 +33,20 @@ Begin Phase 2 — Core layout and alert table
 * Mock data uses only the fixed severity, status, and source values from the spec.
 * Mock data includes unassigned alerts using `assignee: null`.
 * Mock alert timestamps are valid ISO strings spanning recent days from 2026-06-12 through 2026-06-19.
-* The placeholder page renders:
-
-```text
-Alert Triage Mini-View
-Phase 0 scaffold ready.
-```
+* `AlertDashboard` renders the main SOC-style dashboard shell.
+* Local mock data is imported and validated in development before use.
+* Alerts are ordered newest-first by `createdAt` before rendering.
+* Static alert table displays all 200 bundled alerts.
+* Table columns display ID, Severity, Status, Title, Source, Created, and Assignee.
+* Alert IDs are styled subtly.
+* Severity and status badges render consistently.
+* Created time displays as compact relative age.
+* `assignee: null` displays as `Unassigned`.
+* Table content scrolls inside the table panel.
 
 ## Validation Results
 
-Phase 1 validation completed:
+Phase 2 validation completed:
 
 ```bash
 npm run lint
@@ -49,6 +54,15 @@ npm run build
 ```
 
 Both commands completed successfully.
+
+Manual Phase 2 verification completed:
+
+* Static dashboard shell renders through `src/app/page.tsx`.
+* The local alert fixture contains 200 alerts.
+* Newest-first ordering starts with `ALRT-0001` from `2026-06-19T10:00:00.000Z`.
+* The oldest rendered alert is from `2026-06-12T18:53:00.000Z`.
+* 40 alerts are unassigned and render through the table fallback as `Unassigned`.
+* Filters, search, interactive sorting, detail panel, status updates, and summary cards were not added.
 
 Manual data verification completed:
 
@@ -63,9 +77,11 @@ Manual data verification completed:
 
 ## Known Issues
 
-* No dashboard UI components exist yet.
+* Filter/search/sort controls are not implemented yet.
+* Detail panel and status update controls are not implemented yet.
+* Summary cards are not implemented yet.
 * No backend production artifacts exist yet.
-* `npm install` reported 2 moderate severity dependency audit findings. No audit fix was run because dependency upgrades are outside Phase 0 scope.
+* Existing npm dependency audit findings remain unchanged. No audit fix was run because dependency changes are outside Phase 2 scope.
 
 ## AI Usage Notes
 
@@ -75,6 +91,9 @@ Manual data verification completed:
 * Codex implemented Phase 1 as a data/model-only foundation with no UI rendering.
 * Codex used and removed a temporary deterministic generator to create the committed JSON fixture.
 * Codex added a plain TypeScript throwing validation utility without adding dependencies.
+* Codex implemented Phase 2 as a static dashboard/table layer only, without adding Phase 3 interactions.
+* Codex wired the Phase 1 validator into the dashboard in development mode.
+* Codex kept data loading local to the bundled JSON fixture and did not add API routes or new dependencies.
 
 ## Planning Decisions Made
 

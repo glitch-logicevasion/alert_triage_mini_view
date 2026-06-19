@@ -1,0 +1,76 @@
+.page {
+  min-height: 100vh;
+  padding: 32px;
+  background:
+    radial-gradient(circle at top left, rgba(38, 98, 150, 0.18), transparent 32%),
+    #08111f;
+}
+
+.header {
+  margin: 0 auto 24px;
+  max-width: 1280px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #8ea4c0;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: #f4f8ff;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.05;
+}
+
+.subtitle {
+  max-width: 720px;
+  margin: 14px 0 0;
+  color: #a9b9cf;
+  line-height: 1.6;
+}
+
+.tablePanel {
+  max-width: 1280px;
+  margin: 0 auto;
+  border: 1px solid #223149;
+  border-radius: 8px;
+  background: #0c1728;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #1e2d43;
+  padding: 20px 24px;
+}
+
+.panelTitle {
+  margin: 0;
+  color: #f4f8ff;
+  font-size: 1.05rem;
+}
+
+.panelSubtitle {
+  margin: 6px 0 0;
+  color: #8ea4c0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding: 20px;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+}
