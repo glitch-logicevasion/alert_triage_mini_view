@@ -4,14 +4,14 @@
 
 ## Current Phase
 
-**Ready for Phase 7 — README, screen recording readiness, polish**
+**Ready for final review / submission**
 
-Phase 6 is complete.
+Phase 7 is complete.
 
-The immediate next action is:
+The remaining manual submission task is:
 
 ```text
-Begin Phase 7 — README, screen recording readiness, polish
+Record the screen demo and replace the README demo video placeholder if applicable.
 ```
 
 ## Completed Implementation Phases
@@ -23,6 +23,7 @@ Begin Phase 7 — README, screen recording readiness, polish
 * Phase 4 — Detail panel and in-memory status update
 * Phase 5 — SOC UX improvement
 * Phase 6 — SQL + C# production artifacts
+* Phase 7 — README, screen recording readiness, polish
 
 ## Known Working Features
 
@@ -87,6 +88,9 @@ Begin Phase 7 — README, screen recording readiness, polish
 * C# artifact includes server-side status validation for backend enum values.
 * C# artifact includes RBAC, tenant scope, audit logging, and optimistic concurrency placeholders.
 * Backend artifacts are documentation only and are not called by the running frontend.
+* README has been finalized as a concise reviewer-facing submission document.
+* README includes the demo video placeholder, run/validation commands, feature summary, key tradeoffs, AI usage, and production notes.
+* Sortable table headers include `aria-sort` metadata for screen reader clarity.
 
 ## Chosen SOC UX Improvement
 
@@ -100,7 +104,7 @@ SOC analysts need quick queue-level context so they can prioritize high-risk unr
 
 ## Validation Results
 
-Phase 6 validation completed:
+Phase 7 final validation completed:
 
 ```bash
 npm run lint
@@ -108,6 +112,21 @@ npm run build
 ```
 
 Both commands completed successfully.
+
+Manual Phase 7 verification checklist:
+
+* README is concise and reviewer-facing.
+* README includes demo placeholder.
+* README includes run/validation commands.
+* README covers key decisions and trade-offs.
+* README covers AI coding agent usage, delegated work, human review, and scope constraints.
+* README covers production improvements.
+* README mentions docs-only SQL/C# artifacts.
+* App still runs with `npm run dev`.
+* Dashboard still shows summary cards, filters, table, and detail panel.
+* Status update still works in memory.
+* No backend/API/localStorage/dependencies were added.
+* Final lint/build pass completed.
 
 Manual Phase 6 verification checklist:
 
@@ -194,8 +213,8 @@ Manual data verification completed:
 
 ## Known Issues
 
-* README has not yet been updated for final reviewer-facing submission.
-* Existing npm dependency audit findings remain unchanged. No audit fix was run because dependency changes are outside Phase 6 scope.
+* Demo video link is still a placeholder until the screen recording is available.
+* Existing npm dependency audit findings remain unchanged. No audit fix was run because dependency changes are outside Phase 7 scope.
 
 ## AI Usage Notes
 
@@ -223,6 +242,9 @@ Manual data verification completed:
 * Codex implemented Phase 6 as documentation-only backend production sketches.
 * Codex created exactly the requested SQL and C# artifact files under `docs/`.
 * Codex did not wire the artifacts into the frontend or add backend project files, API routes, dependencies, Docker, localStorage, or README changes.
+* Codex finalized the README for reviewer-facing submission during Phase 7.
+* Codex kept final UI polish limited to small sortable-header accessibility metadata.
+* Codex did not add features, dependencies, backend wiring, localStorage, tests, Docker, or Git operations during Phase 7.
 
 ## Planning Decisions Made
 

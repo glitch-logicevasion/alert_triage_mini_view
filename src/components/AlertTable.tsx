@@ -34,6 +34,14 @@ function getSortIndicator(field: AlertSortField, sort: AlertSortState) {
   return sort.direction === "asc" ? "↑" : "↓";
 }
 
+function getAriaSort(field: AlertSortField, sort: AlertSortState) {
+  if (sort.field !== field) {
+    return "none";
+  }
+
+  return sort.direction === "asc" ? "ascending" : "descending";
+}
+
 export function AlertTable({
   alerts,
   emptyMessage = "No alerts available.",
@@ -56,7 +64,11 @@ export function AlertTable({
               const sortIndicator = getSortIndicator(header.field, sort);
 
               return (
-                <th key={header.field} scope="col">
+                <th
+                  aria-sort={getAriaSort(header.field, sort)}
+                  key={header.field}
+                  scope="col"
+                >
                   <button
                     className={styles.sortButton}
                     onClick={() => onSortChange(header.field)}

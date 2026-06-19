@@ -1,82 +1,50 @@
 # Alert Triage Mini-View
 
-A small **Next.js + TypeScript** take-home assessment project for triaging mock security alerts in a restrained SOC-dashboard interface.
+A small Next.js + TypeScript alert triage mini-view using bundled local mock security alerts.
 
-The app loads 200 bundled mock alerts from a local JSON file and lets an analyst filter, search, sort, inspect, and update alert status in frontend memory.
+Demo video: [link to be added]
 
-**Demo video:** [link to be added]
-
-## Run locally
+## Run And Validate
 
 ```bash
 npm install
 npm run dev
-```
-
-Optional validation:
-
-```bash
 npm run lint
 npm run build
 ```
 
 ## Features
 
-* SOC-style alert table with severity, status, title, source, created time, assignee, and subtle alert ID
-* Filters for severity, status, and source
-* Case-insensitive free-text search across alert fields
-* Sortable table columns with custom severity/status ordering
-* Persistent right-side alert detail panel
-* In-memory status update from the detail panel
-* Priority queue summary cards:
+- Local JSON fixture with 200 mock alerts
+- Filter by severity, status, and source
+- Free-text search and sortable alert table
+- Persistent detail panel with in-memory status updates
+- Priority queue summary cards for Open Critical/High, Unassigned, In Progress, Stale Open Alerts, and Total Visible
+- Docs-only SQL/C# production artifacts in `docs/status-update.sql` and `docs/status-update-endpoint.cs`
 
-  * Open Critical/High
-  * Unassigned
-  * In Progress
-  * Stale Open Alerts
-  * Total Visible
+## Key Decisions
 
-## Key decisions and tradeoffs
+- Used bundled local JSON instead of backend fetching to keep the assessment focused and runnable.
+- Kept status updates in memory because the assignment does not require a working backend.
+- Added SQL and C# docs-only sketches showing how persisted production updates could work.
+- Used CSS Modules and native controls instead of UI libraries to keep the app lightweight.
+- Used derived React state and `useMemo` for filter/search/sort/summary calculations.
+- Avoided pagination/virtualization because the fixture is only 200 alerts.
 
-This project intentionally uses a minimal stack: **Next.js, TypeScript, React state, `useMemo`, CSS Modules, and local JSON data**.
+## SOC UX Improvement
 
-Status updates are kept in frontend memory because the assignment does not require a runnable backend. I avoided API routes, databases, auth, UI libraries, chart libraries, external state management, and Docker to keep the implementation focused and easy to review.
-
-The mock data is bundled in the repo instead of uploaded by the user at runtime. A small development-only sanity check is included to verify the expected alert shape without adding a validation dependency.
-
-## UX improvement rationale
-
-The chosen SOC analyst UX improvement is **priority queue summary cards**.
+Chosen improvement: priority queue summary cards.
 
 SOC analysts need quick queue-level context so they can prioritize high-risk unresolved alerts before drilling into individual details.
 
-The cards update based on the currently visible filtered/searched alert set.
+## AI Coding Agent Usage
 
-## Development approach
+I used ChatGPT to plan the phased implementation, refine requirements, review Codex output, and generate phase prompts. I used Codex to implement the app phase by phase, including scaffolding, components, mock data generation, filter/search/sort utilities, detail/status workflow, summary cards, and backend artifact drafts.
 
-This project uses a small spec-driven scaffold:
+Human review included running the app, manually testing behavior, running `npm run lint` and `npm run build`, checking scope boundaries, and committing each phase manually. I constrained or overrode AI output where needed: keeping status updates frontend-only, backend artifacts docs-only, avoiding extra dependencies/UI libraries, keeping summary cards informational only, keeping this README concise, and not using Codex for Git operations.
 
-* `APP_SPEC.md` — product behavior and scope
-* `BUILD_PLAN.md` — phased implementation plan
-* `AGENTS.md` — AI coding-agent operating rules
-* `PROJECT_STATE.md` — current project state and progress
+## Production Notes
 
-## AI coding agent usage
+In production, I would add a real backend API, database persistence, authentication, RBAC, tenant-scoped access, audit logging/status history, optimistic concurrency, server-side validation, structured API errors, pagination or virtualization for large queues, real SIEM/SOAR integrations, and observability/logging.
 
-I used AI coding agents to help scaffold components, utility logic, mock data, and documentation. I delegated repetitive implementation work while reviewing the output for scope control, TypeScript correctness, filter/sort behavior, status update behavior, and alignment with the assignment.
-
-Where AI output added unnecessary complexity or drifted from the spec, I reviewed and adjusted it back toward the intended minimal implementation.
-
-## Production backend notes
-
-The running app does not use a backend. Production persistence is represented as documentation-only artifacts:
-
-* `docs/status-update.sql`
-* `docs/status-update-endpoint.cs`
-
-These show how alert status updates could be backed by a real system with validation, RBAC, tenant scoping, audit history, optimistic concurrency, and parameterized SQL.
-
-## What I would improve for production
-
-For production, I would add authenticated user context, RBAC and tenant checks, backend persistence, audit logging, optimistic concurrency, server-side validation, API error handling, pagination or virtualization for larger queues, and integration with real alert sources.
-
+The included SQL and C# files under `docs/` sketch the status-update persistence approach and are not called by the current frontend.
