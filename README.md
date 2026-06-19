@@ -2,7 +2,7 @@
 
 A small Next.js + TypeScript alert triage mini-view using bundled local mock security alerts.
 
-Demo video: [link to be added]
+Demo video: [https://youtu.be/GySug0A6ccY]
 
 ## Run And Validate
 
