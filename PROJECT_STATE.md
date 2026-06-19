@@ -4,14 +4,14 @@
 
 ## Current Phase
 
-**Ready for Phase 3 — Filter/search/sort logic**
+**Ready for Phase 4 — Detail panel and in-memory status update**
 
-Phase 2 is complete.
+Phase 3 is complete.
 
 The immediate next action is:
 
 ```text
-Begin Phase 3 — Filter/search/sort logic
+Begin Phase 4 — Detail panel and in-memory status update
 ```
 
 ## Completed Implementation Phases
@@ -19,13 +19,14 @@ Begin Phase 3 — Filter/search/sort logic
 * Phase 0 — Repo/bootstrap and scaffold
 * Phase 1 — Mock alert data and TypeScript model
 * Phase 2 — Core layout and alert table
+* Phase 3 — Filter/search/sort logic
 
 ## Known Working Features
 
 * Basic Next.js app scaffold exists.
 * TypeScript is configured with strict settings.
 * Modern App Router structure is present under `src/app`.
-* CSS Modules are available and used by the placeholder page.
+* CSS Modules are available and used by dashboard and table components.
 * Alert TypeScript model exists in `src/types/alert.ts`.
 * Bundled local mock alert data exists in `src/data/mock-alerts.json`.
 * Development-only validation utility exists in `src/lib/alertValidation.ts`.
@@ -43,10 +44,20 @@ Begin Phase 3 — Filter/search/sort logic
 * Created time displays as compact relative age.
 * `assignee: null` displays as `Unassigned`.
 * Table content scrolls inside the table panel.
+* `AlertDashboard` owns filter, search query, and sort state.
+* `AlertFilters` provides search plus severity, status, and source filters.
+* `filterAlerts()` applies filters with AND logic and combines them with search.
+* `sortAlerts()` applies deterministic client-side sorting without mutating input arrays.
+* Search is case-insensitive and matches ID, title, severity, status, source, assignee, and `Unassigned`.
+* Table headers support interactive sorting for Severity, Status, Title, Source, Created, and Assignee.
+* Severity sorting uses `Critical > High > Medium > Low`.
+* Status sorting uses `Open > In Progress > Resolved > False Positive`.
+* Visible count displays matching alerts out of the full local fixture.
+* Empty state displays when no alerts match current filters/search.
 
 ## Validation Results
 
-Phase 2 validation completed:
+Phase 3 validation completed:
 
 ```bash
 npm run lint
@@ -54,6 +65,19 @@ npm run build
 ```
 
 Both commands completed successfully.
+
+Manual Phase 3 verification checklist:
+
+* Search filters alerts by title, ID, severity, status, source, assignee, and `Unassigned`.
+* Severity, status, and source filters work independently and combine with AND logic.
+* Search combines with active filters.
+* Reset clears filters and search without resetting the current sort.
+* Sortable headers toggle direction when active and apply default direction when changing fields.
+* Active sort direction indicator displays in the sorted column header.
+* Created sorting uses date order.
+* Visible count updates as filters/search change.
+* Empty state appears when no alerts match.
+* Detail panel, status updates, summary cards, API routes, and localStorage were not added.
 
 Manual Phase 2 verification completed:
 
@@ -77,11 +101,10 @@ Manual data verification completed:
 
 ## Known Issues
 
-* Filter/search/sort controls are not implemented yet.
 * Detail panel and status update controls are not implemented yet.
 * Summary cards are not implemented yet.
 * No backend production artifacts exist yet.
-* Existing npm dependency audit findings remain unchanged. No audit fix was run because dependency changes are outside Phase 2 scope.
+* Existing npm dependency audit findings remain unchanged. No audit fix was run because dependency changes are outside Phase 3 scope.
 
 ## AI Usage Notes
 
@@ -94,6 +117,10 @@ Manual data verification completed:
 * Codex implemented Phase 2 as a static dashboard/table layer only, without adding Phase 3 interactions.
 * Codex wired the Phase 1 validator into the dashboard in development mode.
 * Codex kept data loading local to the bundled JSON fixture and did not add API routes or new dependencies.
+* Codex implemented Phase 3 filtering, search, and sorting as plain TypeScript utilities plus React state in `AlertDashboard`.
+* Codex kept alerts as imported static data and did not convert alert data to React state.
+* Codex kept `AlertTable` presentational by passing visible alerts, sort state, and sort callbacks from the dashboard.
+* Codex did not add row selection, detail panel behavior, status updates, summary cards, new dependencies, or README changes.
 
 ## Planning Decisions Made
 

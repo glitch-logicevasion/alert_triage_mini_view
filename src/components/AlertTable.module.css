@@ -26,6 +26,39 @@
   text-transform: uppercase;
 }
 
+.sortButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  padding: 0;
+  text-align: left;
+  text-transform: inherit;
+}
+
+.sortButton:hover {
+  color: #d9e4f2;
+}
+
+.sortButton:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid rgba(91, 157, 255, 0.72);
+  outline-offset: 3px;
+}
+
+.sortIndicator {
+  display: inline-block;
+  min-width: 10px;
+  color: #d9e4f2;
+  font-size: 0.82rem;
+}
+
 .table td {
   border-bottom: 1px solid #17253a;
   padding: 14px 16px;
