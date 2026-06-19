@@ -4,19 +4,20 @@
 
 ## Current Phase
 
-**Ready for Phase 1 — Mock alert data and TypeScript model**
+**Ready for Phase 2 — Core layout and alert table**
 
-Phase 0 is complete.
+Phase 1 is complete.
 
 The immediate next action is:
 
 ```text
-Begin Phase 1 — Mock alert data and TypeScript model
+Begin Phase 2 — Core layout and alert table
 ```
 
 ## Completed Implementation Phases
 
 * Phase 0 — Repo/bootstrap and scaffold
+* Phase 1 — Mock alert data and TypeScript model
 
 ## Known Working Features
 
@@ -24,6 +25,13 @@ Begin Phase 1 — Mock alert data and TypeScript model
 * TypeScript is configured with strict settings.
 * Modern App Router structure is present under `src/app`.
 * CSS Modules are available and used by the placeholder page.
+* Alert TypeScript model exists in `src/types/alert.ts`.
+* Bundled local mock alert data exists in `src/data/mock-alerts.json`.
+* Development-only validation utility exists in `src/lib/alertValidation.ts`.
+* Mock data contains exactly 200 alerts with IDs from `ALRT-0001` through `ALRT-0200`.
+* Mock data uses only the fixed severity, status, and source values from the spec.
+* Mock data includes unassigned alerts using `assignee: null`.
+* Mock alert timestamps are valid ISO strings spanning recent days from 2026-06-12 through 2026-06-19.
 * The placeholder page renders:
 
 ```text
@@ -33,7 +41,7 @@ Phase 0 scaffold ready.
 
 ## Validation Results
 
-Phase 0 validation completed:
+Phase 1 validation completed:
 
 ```bash
 npm run lint
@@ -42,9 +50,19 @@ npm run build
 
 Both commands completed successfully.
 
+Manual data verification completed:
+
+* `src/data/mock-alerts.json` exists.
+* The fixture contains exactly 200 alerts.
+* IDs run from `ALRT-0001` to `ALRT-0200`.
+* Only allowed severity/status/source values are used.
+* 40 alerts have `assignee: null`.
+* Timestamps parse as valid ISO strings and span recent days.
+* 82 Open alerts are older than 24 hours for future stale-alert logic.
+* Temporary generation files were removed.
+
 ## Known Issues
 
-* No mock alert data exists yet.
 * No dashboard UI components exist yet.
 * No backend production artifacts exist yet.
 * `npm install` reported 2 moderate severity dependency audit findings. No audit fix was run because dependency upgrades are outside Phase 0 scope.
@@ -54,6 +72,9 @@ Both commands completed successfully.
 * Codex implemented Phase 0 manually because the repo was non-empty and `create-next-app` could risk overwriting existing planning files.
 * Codex preserved existing planning markdown files and only updated `PROJECT_STATE.md`.
 * Codex added a minimal Next.js, TypeScript, App Router, CSS Modules, and ESLint scaffold without dashboard functionality.
+* Codex implemented Phase 1 as a data/model-only foundation with no UI rendering.
+* Codex used and removed a temporary deterministic generator to create the committed JSON fixture.
+* Codex added a plain TypeScript throwing validation utility without adding dependencies.
 
 ## Planning Decisions Made
 

@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "ALRT-0001",
+    "title": "Suspicious PowerShell execution detected",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-19T10:00:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0002",
+    "title": "Multiple failed login attempts from unusual location",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-19T02:49:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0003",
+    "title": "Impossible travel sign-in pattern",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-18T19:38:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0004",
+    "title": "Potential phishing email reported by user",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-18T12:27:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0005",
+    "title": "Endpoint malware quarantine event",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-18T05:16:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0006",
+    "title": "New administrative role assignment detected",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-17T22:05:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0007",
+    "title": "Cloud storage bucket permission change",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-17T15:54:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0008",
+    "title": "Outbound connection to known malicious IP",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-17T08:43:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0009",
+    "title": "Unusual data transfer volume detected",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-17T01:32:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0010",
+    "title": "Privileged account login outside business hours",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-16T18:21:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0011",
+    "title": "New inbox forwarding rule created",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-16T11:10:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0012",
+    "title": "Suspicious OAuth application consent granted",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-16T04:59:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0013",
+    "title": "Endpoint command shell spawned by office process",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-15T21:48:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0014",
+    "title": "High-risk sign-in blocked by conditional access",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-15T14:37:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0015",
+    "title": "Sensitive file shared with external domain",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-15T07:26:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0016",
+    "title": "Repeated VPN authentication failures",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-15T00:15:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0017",
+    "title": "DNS query to newly registered domain",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-14T17:04:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0018",
+    "title": "Credential stuffing activity suspected",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-14T10:53:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0019",
+    "title": "Unusual process injection behavior observed",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-14T03:42:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0020",
+    "title": "Firewall policy changed outside change window",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-13T20:31:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0021",
+    "title": "Service account used from new host",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-13T13:20:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0022",
+    "title": "Large archive created in user profile",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-13T06:09:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0023",
+    "title": "Email attachment detonated in sandbox",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-12T23:58:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0024",
+    "title": "Cloud workload security agent disabled",
+    "severity": "Critical",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-19T08:47:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0025",
+    "title": "New local administrator account created",
+    "severity": "High",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-19T01:36:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0026",
+    "title": "Suspicious PowerShell execution detected",
+    "severity": "High",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-18T18:25:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0027",
+    "title": "Multiple failed login attempts from unusual location",
+    "severity": "High",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-18T11:14:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0028",
+    "title": "Impossible travel sign-in pattern",
+    "severity": "High",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-18T04:03:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0029",
+    "title": "Potential phishing email reported by user",
+    "severity": "High",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-17T21:52:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0030",
+    "title": "Endpoint malware quarantine event",
+    "severity": "High",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-17T14:41:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0031",
+    "title": "New administrative role assignment detected",
+    "severity": "High",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-17T07:30:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0032",
+    "title": "Cloud storage bucket permission change",
+    "severity": "High",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-17T00:19:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0033",
+    "title": "Outbound connection to known malicious IP",
+    "severity": "High",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-16T17:08:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0034",
+    "title": "Unusual data transfer volume detected",
+    "severity": "High",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-16T10:57:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0035",
+    "title": "Privileged account login outside business hours",
+    "severity": "High",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-16T03:46:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0036",
+    "title": "New inbox forwarding rule created",
+    "severity": "High",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-15T20:35:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0037",
+    "title": "Suspicious OAuth application consent granted",
+    "severity": "High",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-15T13:24:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0038",
+    "title": "Endpoint command shell spawned by office process",
+    "severity": "High",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-15T06:13:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0039",
+    "title": "High-risk sign-in blocked by conditional access",
+    "severity": "High",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-14T23:02:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0040",
+    "title": "Sensitive file shared with external domain",
+    "severity": "High",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-14T16:51:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0041",
+    "title": "Repeated VPN authentication failures",
+    "severity": "High",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-14T09:40:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0042",
+    "title": "DNS query to newly registered domain",
+    "severity": "High",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-14T02:29:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0043",
+    "title": "Credential stuffing activity suspected",
+    "severity": "High",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-13T19:18:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0044",
+    "title": "Unusual process injection behavior observed",
+    "severity": "High",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-13T12:07:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0045",
+    "title": "Firewall policy changed outside change window",
+    "severity": "High",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-13T05:56:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0046",
+    "title": "Service account used from new host",
+    "severity": "High",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-12T22:45:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0047",
+    "title": "Large archive created in user profile",
+    "severity": "High",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-19T07:34:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0048",
+    "title": "Email attachment detonated in sandbox",
+    "severity": "High",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-19T00:23:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0049",
+    "title": "Cloud workload security agent disabled",
+    "severity": "High",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-18T17:12:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0050",
+    "title": "New local administrator account created",
+    "severity": "High",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-18T10:01:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0051",
+    "title": "Suspicious PowerShell execution detected",
+    "severity": "High",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-18T03:50:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0052",
+    "title": "Multiple failed login attempts from unusual location",
+    "severity": "High",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-17T20:39:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0053",
+    "title": "Impossible travel sign-in pattern",
+    "severity": "High",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-17T13:28:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0054",
+    "title": "Potential phishing email reported by user",
+    "severity": "High",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-17T06:17:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0055",
+    "title": "Endpoint malware quarantine event",
+    "severity": "High",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-16T23:06:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0056",
+    "title": "New administrative role assignment detected",
+    "severity": "High",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-16T16:55:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0057",
+    "title": "Cloud storage bucket permission change",
+    "severity": "High",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-16T09:44:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0058",
+    "title": "Outbound connection to known malicious IP",
+    "severity": "High",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-16T02:33:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0059",
+    "title": "Unusual data transfer volume detected",
+    "severity": "High",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-15T19:22:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0060",
+    "title": "Privileged account login outside business hours",
+    "severity": "High",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-15T12:11:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0061",
+    "title": "New inbox forwarding rule created",
+    "severity": "High",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-15T06:00:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0062",
+    "title": "Suspicious OAuth application consent granted",
+    "severity": "High",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-14T22:49:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0063",
+    "title": "Endpoint command shell spawned by office process",
+    "severity": "High",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-14T15:38:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0064",
+    "title": "High-risk sign-in blocked by conditional access",
+    "severity": "High",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-14T08:27:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0065",
+    "title": "Sensitive file shared with external domain",
+    "severity": "High",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-14T01:16:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0066",
+    "title": "Repeated VPN authentication failures",
+    "severity": "High",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-13T18:05:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0067",
+    "title": "DNS query to newly registered domain",
+    "severity": "High",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-13T11:54:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0068",
+    "title": "Credential stuffing activity suspected",
+    "severity": "High",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-13T04:43:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0069",
+    "title": "Unusual process injection behavior observed",
+    "severity": "High",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-12T21:32:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0070",
+    "title": "Firewall policy changed outside change window",
+    "severity": "High",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-19T06:21:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0071",
+    "title": "Service account used from new host",
+    "severity": "High",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-18T23:10:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0072",
+    "title": "Large archive created in user profile",
+    "severity": "High",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-18T16:59:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0073",
+    "title": "Email attachment detonated in sandbox",
+    "severity": "High",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-18T09:48:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0074",
+    "title": "Cloud workload security agent disabled",
+    "severity": "High",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-18T02:37:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0075",
+    "title": "New local administrator account created",
+    "severity": "High",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-17T19:26:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0076",
+    "title": "Suspicious PowerShell execution detected",
+    "severity": "High",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-17T12:15:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0077",
+    "title": "Multiple failed login attempts from unusual location",
+    "severity": "High",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-17T05:04:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0078",
+    "title": "Impossible travel sign-in pattern",
+    "severity": "High",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-16T22:53:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0079",
+    "title": "Potential phishing email reported by user",
+    "severity": "High",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-16T15:42:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0080",
+    "title": "Endpoint malware quarantine event",
+    "severity": "High",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-16T08:31:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0081",
+    "title": "New administrative role assignment detected",
+    "severity": "Medium",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-16T01:20:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0082",
+    "title": "Cloud storage bucket permission change",
+    "severity": "Medium",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-15T18:09:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0083",
+    "title": "Outbound connection to known malicious IP",
+    "severity": "Medium",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-15T11:58:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0084",
+    "title": "Unusual data transfer volume detected",
+    "severity": "Medium",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-15T04:47:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0085",
+    "title": "Privileged account login outside business hours",
+    "severity": "Medium",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-14T21:36:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0086",
+    "title": "New inbox forwarding rule created",
+    "severity": "Medium",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-14T14:25:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0087",
+    "title": "Suspicious OAuth application consent granted",
+    "severity": "Medium",
+    "status": "Open",
+    "source": "Email Security",
+    "createdAt": "2026-06-14T07:14:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0088",
+    "title": "Endpoint command shell spawned by office process",
+    "severity": "Medium",
+    "status": "Open",
+    "source": "Cloud",
+    "createdAt": "2026-06-14T00:03:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0089",
+    "title": "High-risk sign-in blocked by conditional access",
+    "severity": "Medium",
+    "status": "Open",
+    "source": "Identity",
+    "createdAt": "2026-06-13T17:52:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0090",
+    "title": "Sensitive file shared with external domain",
+    "severity": "Medium",
+    "status": "Open",
+    "source": "Network",
+    "createdAt": "2026-06-13T10:41:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0091",
+    "title": "Repeated VPN authentication failures",
+    "severity": "Medium",
+    "status": "Open",
+    "source": "SIEM",
+    "createdAt": "2026-06-13T03:30:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0092",
+    "title": "DNS query to newly registered domain",
+    "severity": "Medium",
+    "status": "Open",
+    "source": "EDR",
+    "createdAt": "2026-06-12T20:19:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0093",
+    "title": "Credential stuffing activity suspected",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Email Security",
+    "createdAt": "2026-06-19T05:08:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0094",
+    "title": "Unusual process injection behavior observed",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Cloud",
+    "createdAt": "2026-06-18T22:57:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0095",
+    "title": "Firewall policy changed outside change window",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Identity",
+    "createdAt": "2026-06-18T15:46:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0096",
+    "title": "Service account used from new host",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Network",
+    "createdAt": "2026-06-18T08:35:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0097",
+    "title": "Large archive created in user profile",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "SIEM",
+    "createdAt": "2026-06-18T01:24:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0098",
+    "title": "Email attachment detonated in sandbox",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "EDR",
+    "createdAt": "2026-06-17T18:13:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0099",
+    "title": "Cloud workload security agent disabled",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Email Security",
+    "createdAt": "2026-06-17T11:02:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0100",
+    "title": "New local administrator account created",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Cloud",
+    "createdAt": "2026-06-17T04:51:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0101",
+    "title": "Suspicious PowerShell execution detected",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Identity",
+    "createdAt": "2026-06-16T21:40:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0102",
+    "title": "Multiple failed login attempts from unusual location",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Network",
+    "createdAt": "2026-06-16T14:29:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0103",
+    "title": "Impossible travel sign-in pattern",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "SIEM",
+    "createdAt": "2026-06-16T07:18:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0104",
+    "title": "Potential phishing email reported by user",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "EDR",
+    "createdAt": "2026-06-16T00:07:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0105",
+    "title": "Endpoint malware quarantine event",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Email Security",
+    "createdAt": "2026-06-15T17:56:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0106",
+    "title": "New administrative role assignment detected",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Cloud",
+    "createdAt": "2026-06-15T10:45:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0107",
+    "title": "Cloud storage bucket permission change",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Identity",
+    "createdAt": "2026-06-15T03:34:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0108",
+    "title": "Outbound connection to known malicious IP",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Network",
+    "createdAt": "2026-06-14T20:23:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0109",
+    "title": "Unusual data transfer volume detected",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "SIEM",
+    "createdAt": "2026-06-14T13:12:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0110",
+    "title": "Privileged account login outside business hours",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "EDR",
+    "createdAt": "2026-06-14T06:01:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0111",
+    "title": "New inbox forwarding rule created",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Email Security",
+    "createdAt": "2026-06-13T23:50:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0112",
+    "title": "Suspicious OAuth application consent granted",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Cloud",
+    "createdAt": "2026-06-13T16:39:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0113",
+    "title": "Endpoint command shell spawned by office process",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Identity",
+    "createdAt": "2026-06-13T09:28:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0114",
+    "title": "High-risk sign-in blocked by conditional access",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Network",
+    "createdAt": "2026-06-13T02:17:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0115",
+    "title": "Sensitive file shared with external domain",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "SIEM",
+    "createdAt": "2026-06-12T19:06:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0116",
+    "title": "Repeated VPN authentication failures",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "EDR",
+    "createdAt": "2026-06-19T04:55:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0117",
+    "title": "DNS query to newly registered domain",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Email Security",
+    "createdAt": "2026-06-18T21:44:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0118",
+    "title": "Credential stuffing activity suspected",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Cloud",
+    "createdAt": "2026-06-18T14:33:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0119",
+    "title": "Unusual process injection behavior observed",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Identity",
+    "createdAt": "2026-06-18T07:22:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0120",
+    "title": "Firewall policy changed outside change window",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Network",
+    "createdAt": "2026-06-18T00:11:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0121",
+    "title": "Service account used from new host",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "SIEM",
+    "createdAt": "2026-06-17T18:00:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0122",
+    "title": "Large archive created in user profile",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "EDR",
+    "createdAt": "2026-06-17T10:49:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0123",
+    "title": "Email attachment detonated in sandbox",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Email Security",
+    "createdAt": "2026-06-17T03:38:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0124",
+    "title": "Cloud workload security agent disabled",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Cloud",
+    "createdAt": "2026-06-16T20:27:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0125",
+    "title": "New local administrator account created",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Identity",
+    "createdAt": "2026-06-16T13:16:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0126",
+    "title": "Suspicious PowerShell execution detected",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Network",
+    "createdAt": "2026-06-16T06:05:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0127",
+    "title": "Multiple failed login attempts from unusual location",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "SIEM",
+    "createdAt": "2026-06-15T23:54:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0128",
+    "title": "Impossible travel sign-in pattern",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "EDR",
+    "createdAt": "2026-06-15T16:43:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0129",
+    "title": "Potential phishing email reported by user",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Email Security",
+    "createdAt": "2026-06-15T09:32:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0130",
+    "title": "Endpoint malware quarantine event",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Cloud",
+    "createdAt": "2026-06-15T02:21:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0131",
+    "title": "New administrative role assignment detected",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Identity",
+    "createdAt": "2026-06-14T19:10:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0132",
+    "title": "Cloud storage bucket permission change",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Network",
+    "createdAt": "2026-06-14T12:59:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0133",
+    "title": "Outbound connection to known malicious IP",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "SIEM",
+    "createdAt": "2026-06-14T05:48:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0134",
+    "title": "Unusual data transfer volume detected",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "EDR",
+    "createdAt": "2026-06-13T22:37:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0135",
+    "title": "Privileged account login outside business hours",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Email Security",
+    "createdAt": "2026-06-13T15:26:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0136",
+    "title": "New inbox forwarding rule created",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Cloud",
+    "createdAt": "2026-06-13T08:15:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0137",
+    "title": "Suspicious OAuth application consent granted",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Identity",
+    "createdAt": "2026-06-13T01:04:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0138",
+    "title": "Endpoint command shell spawned by office process",
+    "severity": "Medium",
+    "status": "In Progress",
+    "source": "Network",
+    "createdAt": "2026-06-12T18:53:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0139",
+    "title": "High-risk sign-in blocked by conditional access",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "SIEM",
+    "createdAt": "2026-06-19T03:42:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0140",
+    "title": "Sensitive file shared with external domain",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "EDR",
+    "createdAt": "2026-06-18T20:31:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0141",
+    "title": "Repeated VPN authentication failures",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "Email Security",
+    "createdAt": "2026-06-18T13:20:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0142",
+    "title": "DNS query to newly registered domain",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "Cloud",
+    "createdAt": "2026-06-18T06:09:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0143",
+    "title": "Credential stuffing activity suspected",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "Identity",
+    "createdAt": "2026-06-17T23:58:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0144",
+    "title": "Unusual process injection behavior observed",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "Network",
+    "createdAt": "2026-06-17T16:47:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0145",
+    "title": "Firewall policy changed outside change window",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "SIEM",
+    "createdAt": "2026-06-17T09:36:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0146",
+    "title": "Service account used from new host",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "EDR",
+    "createdAt": "2026-06-17T02:25:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0147",
+    "title": "Large archive created in user profile",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "Email Security",
+    "createdAt": "2026-06-16T19:14:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0148",
+    "title": "Email attachment detonated in sandbox",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "Cloud",
+    "createdAt": "2026-06-16T12:03:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0149",
+    "title": "Cloud workload security agent disabled",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "Identity",
+    "createdAt": "2026-06-16T05:52:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0150",
+    "title": "New local administrator account created",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "Network",
+    "createdAt": "2026-06-15T22:41:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0151",
+    "title": "Suspicious PowerShell execution detected",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "SIEM",
+    "createdAt": "2026-06-15T15:30:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0152",
+    "title": "Multiple failed login attempts from unusual location",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "EDR",
+    "createdAt": "2026-06-15T08:19:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0153",
+    "title": "Impossible travel sign-in pattern",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "Email Security",
+    "createdAt": "2026-06-15T01:08:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0154",
+    "title": "Potential phishing email reported by user",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "Cloud",
+    "createdAt": "2026-06-14T18:57:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0155",
+    "title": "Endpoint malware quarantine event",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "Identity",
+    "createdAt": "2026-06-14T11:46:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0156",
+    "title": "New administrative role assignment detected",
+    "severity": "Medium",
+    "status": "Resolved",
+    "source": "Network",
+    "createdAt": "2026-06-14T04:35:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0157",
+    "title": "Cloud storage bucket permission change",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "SIEM",
+    "createdAt": "2026-06-13T21:24:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0158",
+    "title": "Outbound connection to known malicious IP",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "EDR",
+    "createdAt": "2026-06-13T14:13:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0159",
+    "title": "Unusual data transfer volume detected",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Email Security",
+    "createdAt": "2026-06-13T07:02:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0160",
+    "title": "Privileged account login outside business hours",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Cloud",
+    "createdAt": "2026-06-13T00:51:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0161",
+    "title": "New inbox forwarding rule created",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Identity",
+    "createdAt": "2026-06-19T09:40:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0162",
+    "title": "Suspicious OAuth application consent granted",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Network",
+    "createdAt": "2026-06-19T02:29:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0163",
+    "title": "Endpoint command shell spawned by office process",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "SIEM",
+    "createdAt": "2026-06-18T19:18:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0164",
+    "title": "High-risk sign-in blocked by conditional access",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "EDR",
+    "createdAt": "2026-06-18T12:07:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0165",
+    "title": "Sensitive file shared with external domain",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Email Security",
+    "createdAt": "2026-06-18T05:56:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0166",
+    "title": "Repeated VPN authentication failures",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Cloud",
+    "createdAt": "2026-06-17T22:45:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0167",
+    "title": "DNS query to newly registered domain",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Identity",
+    "createdAt": "2026-06-17T15:34:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0168",
+    "title": "Credential stuffing activity suspected",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Network",
+    "createdAt": "2026-06-17T08:23:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0169",
+    "title": "Unusual process injection behavior observed",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "SIEM",
+    "createdAt": "2026-06-17T01:12:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0170",
+    "title": "Firewall policy changed outside change window",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "EDR",
+    "createdAt": "2026-06-16T18:01:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0171",
+    "title": "Service account used from new host",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Email Security",
+    "createdAt": "2026-06-16T11:50:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0172",
+    "title": "Large archive created in user profile",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Cloud",
+    "createdAt": "2026-06-16T04:39:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0173",
+    "title": "Email attachment detonated in sandbox",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Identity",
+    "createdAt": "2026-06-15T21:28:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0174",
+    "title": "Cloud workload security agent disabled",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Network",
+    "createdAt": "2026-06-15T14:17:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0175",
+    "title": "New local administrator account created",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "SIEM",
+    "createdAt": "2026-06-15T07:06:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0176",
+    "title": "Suspicious PowerShell execution detected",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "EDR",
+    "createdAt": "2026-06-15T00:55:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0177",
+    "title": "Multiple failed login attempts from unusual location",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Email Security",
+    "createdAt": "2026-06-14T17:44:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0178",
+    "title": "Impossible travel sign-in pattern",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Cloud",
+    "createdAt": "2026-06-14T10:33:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0179",
+    "title": "Potential phishing email reported by user",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Identity",
+    "createdAt": "2026-06-14T03:22:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0180",
+    "title": "Endpoint malware quarantine event",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Network",
+    "createdAt": "2026-06-13T20:11:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0181",
+    "title": "New administrative role assignment detected",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "SIEM",
+    "createdAt": "2026-06-13T14:00:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0182",
+    "title": "Cloud storage bucket permission change",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "EDR",
+    "createdAt": "2026-06-13T06:49:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0183",
+    "title": "Outbound connection to known malicious IP",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Email Security",
+    "createdAt": "2026-06-12T23:38:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0184",
+    "title": "Unusual data transfer volume detected",
+    "severity": "Low",
+    "status": "Resolved",
+    "source": "Cloud",
+    "createdAt": "2026-06-19T08:27:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0185",
+    "title": "Privileged account login outside business hours",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "Identity",
+    "createdAt": "2026-06-19T01:16:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0186",
+    "title": "New inbox forwarding rule created",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "Network",
+    "createdAt": "2026-06-18T18:05:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0187",
+    "title": "Suspicious OAuth application consent granted",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "SIEM",
+    "createdAt": "2026-06-18T11:54:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0188",
+    "title": "Endpoint command shell spawned by office process",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "EDR",
+    "createdAt": "2026-06-18T04:43:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0189",
+    "title": "High-risk sign-in blocked by conditional access",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "Email Security",
+    "createdAt": "2026-06-17T21:32:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0190",
+    "title": "Sensitive file shared with external domain",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "Cloud",
+    "createdAt": "2026-06-17T14:21:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0191",
+    "title": "Repeated VPN authentication failures",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "Identity",
+    "createdAt": "2026-06-17T07:10:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0192",
+    "title": "DNS query to newly registered domain",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "Network",
+    "createdAt": "2026-06-17T00:59:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0193",
+    "title": "Credential stuffing activity suspected",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "SIEM",
+    "createdAt": "2026-06-16T17:48:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0194",
+    "title": "Unusual process injection behavior observed",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "EDR",
+    "createdAt": "2026-06-16T10:37:00.000Z",
+    "assignee": "Alex Morgan"
+  },
+  {
+    "id": "ALRT-0195",
+    "title": "Firewall policy changed outside change window",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "Email Security",
+    "createdAt": "2026-06-16T03:26:00.000Z",
+    "assignee": "Sam Rivera"
+  },
+  {
+    "id": "ALRT-0196",
+    "title": "Service account used from new host",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "Cloud",
+    "createdAt": "2026-06-15T20:15:00.000Z",
+    "assignee": null
+  },
+  {
+    "id": "ALRT-0197",
+    "title": "Large archive created in user profile",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "Identity",
+    "createdAt": "2026-06-15T13:04:00.000Z",
+    "assignee": "Maya Chen"
+  },
+  {
+    "id": "ALRT-0198",
+    "title": "Email attachment detonated in sandbox",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "Network",
+    "createdAt": "2026-06-15T06:53:00.000Z",
+    "assignee": "Jordan Lee"
+  },
+  {
+    "id": "ALRT-0199",
+    "title": "Cloud workload security agent disabled",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "SIEM",
+    "createdAt": "2026-06-14T23:42:00.000Z",
+    "assignee": "Priya Singh"
+  },
+  {
+    "id": "ALRT-0200",
+    "title": "New local administrator account created",
+    "severity": "Low",
+    "status": "False Positive",
+    "source": "EDR",
+    "createdAt": "2026-06-14T16:31:00.000Z",
+    "assignee": null
+  }
+]
