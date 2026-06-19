@@ -8,6 +8,8 @@ import styles from "./AlertTable.module.css";
 type AlertTableProps = {
   alerts: Alert[];
   emptyMessage?: string;
+  selectedAlertId: string | null;
+  onSelectAlert: (alertId: string) => void;
   sort: AlertSortState;
   onSortChange: (field: AlertSortField) => void;
 };
@@ -35,6 +37,8 @@ function getSortIndicator(field: AlertSortField, sort: AlertSortState) {
 export function AlertTable({
   alerts,
   emptyMessage = "No alerts available.",
+  selectedAlertId,
+  onSelectAlert,
   sort,
   onSortChange,
 }: AlertTableProps) {
@@ -69,23 +73,39 @@ export function AlertTable({
           </tr>
         </thead>
         <tbody>
-          {alerts.map((alert) => (
-            <tr key={alert.id}>
-              <td className={styles.alertId}>{alert.id}</td>
-              <td>
-                <SeverityBadge severity={alert.severity} />
-              </td>
-              <td>
-                <StatusBadge status={alert.status} />
-              </td>
-              <td className={styles.titleCell}>{alert.title}</td>
-              <td>{alert.source}</td>
-              <td>{formatRelativeTime(alert.createdAt)}</td>
-              <td className={alert.assignee === null ? styles.unassigned : ""}>
-                {alert.assignee ?? "Unassigned"}
-              </td>
-            </tr>
-          ))}
+          {alerts.map((alert) => {
+            const isSelected = alert.id === selectedAlertId;
+
+            return (
+              <tr
+                aria-selected={isSelected}
+                className={isSelected ? styles.selectedRow : undefined}
+                key={alert.id}
+              >
+                <td className={styles.alertId}>{alert.id}</td>
+                <td>
+                  <SeverityBadge severity={alert.severity} />
+                </td>
+                <td>
+                  <StatusBadge status={alert.status} />
+                </td>
+                <td className={styles.titleCell}>
+                  <button
+                    className={styles.rowSelectButton}
+                    onClick={() => onSelectAlert(alert.id)}
+                    type="button"
+                  >
+                    {alert.title}
+                  </button>
+                </td>
+                <td>{alert.source}</td>
+                <td>{formatRelativeTime(alert.createdAt)}</td>
+                <td className={alert.assignee === null ? styles.unassigned : ""}>
+                  {alert.assignee ?? "Unassigned"}
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

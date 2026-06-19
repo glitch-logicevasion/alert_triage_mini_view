@@ -11,7 +11,8 @@ import {
   type AlertSortState,
 } from "../lib/alertSort";
 import { validateMockAlerts } from "../lib/alertValidation";
-import type { Alert } from "../types/alert";
+import type { Alert, AlertStatus } from "../types/alert";
+import { AlertDetailPanel } from "./AlertDetailPanel";
 import { AlertFilters } from "./AlertFilters";
 import { AlertTable } from "./AlertTable";
 import styles from "./AlertDashboard.module.css";
@@ -20,9 +21,11 @@ if (process.env.NODE_ENV !== "production") {
   validateMockAlerts(mockAlerts);
 }
 
-const alerts = mockAlerts as Alert[];
+const initialAlerts = mockAlerts as Alert[];
 
 export function AlertDashboard() {
+  const [alerts, setAlerts] = useState<Alert[]>(initialAlerts);
+  const [selectedAlertId, setSelectedAlertId] = useState<string | null>(null);
   const [filters, setFilters] = useState(defaultFilters);
   const [searchQuery, setSearchQuery] = useState("");
   const [sort, setSort] = useState<AlertSortState>(defaultSort);
@@ -31,7 +34,12 @@ export function AlertDashboard() {
     const filteredAlerts = filterAlerts(alerts, filters, searchQuery);
 
     return sortAlerts(filteredAlerts, sort);
-  }, [filters, searchQuery, sort]);
+  }, [alerts, filters, searchQuery, sort]);
+
+  const selectedAlert = useMemo(
+    () => alerts.find((alert) => alert.id === selectedAlertId) ?? null,
+    [alerts, selectedAlertId],
+  );
 
   function handleSortChange(field: AlertSortField) {
     setSort((currentSort) => {
@@ -52,6 +60,14 @@ export function AlertDashboard() {
   function handleResetFilters() {
     setFilters(defaultFilters);
     setSearchQuery("");
+  }
+
+  function handleStatusChange(alertId: string, nextStatus: AlertStatus) {
+    setAlerts((currentAlerts) =>
+      currentAlerts.map((alert) =>
+        alert.id === alertId ? { ...alert, status: nextStatus } : alert,
+      ),
+    );
   }
 
   const emptyMessage =
@@ -76,33 +92,42 @@ export function AlertDashboard() {
         </div>
       </section>
 
-      <section className={styles.tablePanel} aria-labelledby="table-title">
-        <div className={styles.panelHeader}>
-          <div>
-            <h2 className={styles.panelTitle} id="table-title">
-              Alert queue
-            </h2>
-            <p className={styles.panelSubtitle}>
-              Use the controls to narrow the local mock alert queue.
-            </p>
+      <div className={styles.dashboardGrid}>
+        <section className={styles.tablePanel} aria-labelledby="table-title">
+          <div className={styles.panelHeader}>
+            <div>
+              <h2 className={styles.panelTitle} id="table-title">
+                Alert queue
+              </h2>
+              <p className={styles.panelSubtitle}>
+                Use the controls to narrow the local mock alert queue.
+              </p>
+            </div>
+            <p className={styles.visibleCount}>{visibleCountLabel}</p>
           </div>
-          <p className={styles.visibleCount}>{visibleCountLabel}</p>
-        </div>
 
-        <AlertFilters
-          filters={filters}
-          onFiltersChange={setFilters}
-          onReset={handleResetFilters}
-          onSearchQueryChange={setSearchQuery}
-          searchQuery={searchQuery}
+          <AlertFilters
+            filters={filters}
+            onFiltersChange={setFilters}
+            onReset={handleResetFilters}
+            onSearchQueryChange={setSearchQuery}
+            searchQuery={searchQuery}
+          />
+          <AlertTable
+            alerts={visibleAlerts}
+            emptyMessage={emptyMessage}
+            onSelectAlert={setSelectedAlertId}
+            onSortChange={handleSortChange}
+            selectedAlertId={selectedAlertId}
+            sort={sort}
+          />
+        </section>
+
+        <AlertDetailPanel
+          alert={selectedAlert}
+          onStatusChange={handleStatusChange}
         />
-        <AlertTable
-          alerts={visibleAlerts}
-          emptyMessage={emptyMessage}
-          onSortChange={handleSortChange}
-          sort={sort}
-        />
-      </section>
+      </div>
     </main>
   );
 }

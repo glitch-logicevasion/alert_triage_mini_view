@@ -26,3 +26,16 @@ export function formatRelativeTime(isoTimestamp: string, now = new Date()) {
 
   return `${diffDays}d ago`;
 }
+
+export function formatFullTimestamp(isoTimestamp: string) {
+  const createdAt = new Date(isoTimestamp);
+
+  if (Number.isNaN(createdAt.getTime())) {
+    return "Unknown";
+  }
+
+  return new Intl.DateTimeFormat("en-US", {
+    dateStyle: "medium",
+    timeStyle: "short",
+  }).format(createdAt);
+}

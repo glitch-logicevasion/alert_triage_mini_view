@@ -77,6 +77,15 @@
   background: #13243a;
 }
 
+.table tbody .selectedRow {
+  background: #142a46;
+  box-shadow: inset 3px 0 0 #5b9dff;
+}
+
+.table tbody .selectedRow:hover {
+  background: #183352;
+}
+
 .alertId {
   color: #7e91aa;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
@@ -87,6 +96,27 @@
   min-width: 280px;
   color: #f1f6ff;
   font-weight: 600;
+}
+
+.rowSelectButton {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-weight: inherit;
+  padding: 0;
+  text-align: left;
+}
+
+.rowSelectButton:hover {
+  color: #b9d5ff;
+}
+
+.rowSelectButton:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid rgba(91, 157, 255, 0.72);
+  outline-offset: 3px;
 }
 
 .unassigned {

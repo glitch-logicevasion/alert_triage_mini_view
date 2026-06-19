@@ -4,14 +4,14 @@
 
 ## Current Phase
 
-**Ready for Phase 4 — Detail panel and in-memory status update**
+**Ready for Phase 5 — SOC UX improvement**
 
-Phase 3 is complete.
+Phase 4 is complete.
 
 The immediate next action is:
 
 ```text
-Begin Phase 4 — Detail panel and in-memory status update
+Begin Phase 5 — SOC UX improvement
 ```
 
 ## Completed Implementation Phases
@@ -20,6 +20,7 @@ Begin Phase 4 — Detail panel and in-memory status update
 * Phase 1 — Mock alert data and TypeScript model
 * Phase 2 — Core layout and alert table
 * Phase 3 — Filter/search/sort logic
+* Phase 4 — Detail panel and in-memory status update
 
 ## Known Working Features
 
@@ -54,10 +55,21 @@ Begin Phase 4 — Detail panel and in-memory status update
 * Status sorting uses `Open > In Progress > Resolved > False Positive`.
 * Visible count displays matching alerts out of the full local fixture.
 * Empty state displays when no alerts match current filters/search.
+* Alerts are initialized into React state from the validated local fixture.
+* `AlertDashboard` stores selected alert ID state.
+* Selected alert is derived from full alert state, not from the visible table.
+* Persistent right-side detail panel appears alongside the table on desktop and stacks below on smaller screens.
+* Detail panel shows the required initial empty state when no alert is selected.
+* Table row selection is available through a native button in the title cell.
+* Selected row styling is visually obvious and restrained.
+* Detail view shows alert ID, title, severity, status, source, full timestamp, relative age, and assignee.
+* Detail panel shows a stale indicator for Open alerts older than 24 hours.
+* Status updates happen immediately in memory from the detail panel.
+* Table rows, detail panel, visible count, filters, search, and sorting derive from updated alert state.
 
 ## Validation Results
 
-Phase 3 validation completed:
+Phase 4 validation completed:
 
 ```bash
 npm run lint
@@ -65,6 +77,23 @@ npm run build
 ```
 
 Both commands completed successfully.
+
+Manual Phase 4 verification checklist:
+
+* App runs with `npm run dev`.
+* No alert is selected by default.
+* Detail panel empty state appears initially.
+* Selecting an alert from the table opens its details.
+* Selected row styling appears.
+* Detail panel shows ID, title, severity, status, source, full timestamp, relative age, assignee, and stale indicator when applicable.
+* Status select shows the selected alert current status.
+* Changing status updates the alert in memory immediately.
+* Table row status and detail panel status update after status change.
+* Visible count updates when a status change affects active filters.
+* A selected alert remains visible in the detail panel even if a status-filter change removes it from the table.
+* Filters/search/sort still work after status updates.
+* Reset still clears filters/search only and preserves sort.
+* Summary cards, backend/API calls, and localStorage were not added.
 
 Manual Phase 3 verification checklist:
 
@@ -101,10 +130,9 @@ Manual data verification completed:
 
 ## Known Issues
 
-* Detail panel and status update controls are not implemented yet.
 * Summary cards are not implemented yet.
 * No backend production artifacts exist yet.
-* Existing npm dependency audit findings remain unchanged. No audit fix was run because dependency changes are outside Phase 3 scope.
+* Existing npm dependency audit findings remain unchanged. No audit fix was run because dependency changes are outside Phase 4 scope.
 
 ## AI Usage Notes
 
@@ -121,6 +149,10 @@ Manual data verification completed:
 * Codex kept alerts as imported static data and did not convert alert data to React state.
 * Codex kept `AlertTable` presentational by passing visible alerts, sort state, and sort callbacks from the dashboard.
 * Codex did not add row selection, detail panel behavior, status updates, summary cards, new dependencies, or README changes.
+* Codex implemented Phase 4 by initializing alerts into React state and storing selected alert by ID.
+* Codex derived selected alert from full alert state so the detail panel remains current after status updates and active filters.
+* Codex added the persistent detail panel and stale Open alert helper without adding summary card calculations.
+* Codex kept status updates frontend-only and did not add API routes, localStorage, backend code, new dependencies, or README changes.
 
 ## Planning Decisions Made
 
