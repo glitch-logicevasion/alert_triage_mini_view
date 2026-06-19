@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import mockAlerts from "../data/mock-alerts.json";
 import { defaultFilters, filterAlerts } from "../lib/alertFilters";
+import { getAlertSummary } from "../lib/alertSummary";
 import {
   defaultSort,
   getDefaultDirectionForSortField,
@@ -15,6 +16,7 @@ import type { Alert, AlertStatus } from "../types/alert";
 import { AlertDetailPanel } from "./AlertDetailPanel";
 import { AlertFilters } from "./AlertFilters";
 import { AlertTable } from "./AlertTable";
+import { SummaryCards } from "./SummaryCards";
 import styles from "./AlertDashboard.module.css";
 
 if (process.env.NODE_ENV !== "production") {
@@ -39,6 +41,11 @@ export function AlertDashboard() {
   const selectedAlert = useMemo(
     () => alerts.find((alert) => alert.id === selectedAlertId) ?? null,
     [alerts, selectedAlertId],
+  );
+
+  const summary = useMemo(
+    () => getAlertSummary(visibleAlerts),
+    [visibleAlerts],
   );
 
   function handleSortChange(field: AlertSortField) {
@@ -91,6 +98,8 @@ export function AlertDashboard() {
           </p>
         </div>
       </section>
+
+      <SummaryCards summary={summary} />
 
       <div className={styles.dashboardGrid}>
         <section className={styles.tablePanel} aria-labelledby="table-title">

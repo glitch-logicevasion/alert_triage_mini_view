@@ -4,14 +4,14 @@
 
 ## Current Phase
 
-**Ready for Phase 5 — SOC UX improvement**
+**Ready for Phase 6 — SQL + C# production artifacts**
 
-Phase 4 is complete.
+Phase 5 is complete.
 
 The immediate next action is:
 
 ```text
-Begin Phase 5 — SOC UX improvement
+Begin Phase 6 — SQL + C# production artifacts
 ```
 
 ## Completed Implementation Phases
@@ -21,6 +21,7 @@ Begin Phase 5 — SOC UX improvement
 * Phase 2 — Core layout and alert table
 * Phase 3 — Filter/search/sort logic
 * Phase 4 — Detail panel and in-memory status update
+* Phase 5 — SOC UX improvement
 
 ## Known Working Features
 
@@ -66,10 +67,28 @@ Begin Phase 5 — SOC UX improvement
 * Detail panel shows a stale indicator for Open alerts older than 24 hours.
 * Status updates happen immediately in memory from the detail panel.
 * Table rows, detail panel, visible count, filters, search, and sorting derive from updated alert state.
+* Chosen SOC UX improvement is priority queue summary cards.
+* `SummaryCards` renders under the page header and above the main table/detail grid.
+* `getAlertSummary()` calculates summary counts from visible alerts.
+* Summary cards derive from `visibleAlerts`, not the full alert fixture.
+* Summary cards show Open Critical/High, Unassigned, In Progress, Stale Open Alerts, and Total Visible counts.
+* Summary counts update after filters, search, and status changes.
+* Summary cards are informational only and not clickable.
+* Existing filter/search/sort/detail/status behavior is preserved.
+
+## Chosen SOC UX Improvement
+
+Priority queue summary cards.
+
+Rationale:
+
+```text
+SOC analysts need quick queue-level context so they can prioritize high-risk unresolved alerts before drilling into individual details.
+```
 
 ## Validation Results
 
-Phase 4 validation completed:
+Phase 5 validation completed:
 
 ```bash
 npm run lint
@@ -77,6 +96,21 @@ npm run build
 ```
 
 Both commands completed successfully.
+
+Manual Phase 5 verification checklist:
+
+* App runs with `npm run dev`.
+* Summary cards appear under the page header and above the table/detail grid.
+* Cards display Open Critical/High, Unassigned, In Progress, Stale Open Alerts, and Total Visible.
+* Cards summarize the visible filtered/searched result set, not the full dataset.
+* Changing filters updates summary card counts.
+* Changing search updates summary card counts.
+* Changing status from the detail panel updates summary card counts.
+* `Total Visible` matches the existing `Showing X of 200 alerts` visible count.
+* Summary cards are informational only and not clickable.
+* Detail panel and status updates still work.
+* Filter/search/sort/reset behavior still works.
+* Backend/API/localStorage and README updates were not added.
 
 Manual Phase 4 verification checklist:
 
@@ -130,9 +164,8 @@ Manual data verification completed:
 
 ## Known Issues
 
-* Summary cards are not implemented yet.
 * No backend production artifacts exist yet.
-* Existing npm dependency audit findings remain unchanged. No audit fix was run because dependency changes are outside Phase 4 scope.
+* Existing npm dependency audit findings remain unchanged. No audit fix was run because dependency changes are outside Phase 5 scope.
 
 ## AI Usage Notes
 
@@ -153,6 +186,10 @@ Manual data verification completed:
 * Codex derived selected alert from full alert state so the detail panel remains current after status updates and active filters.
 * Codex added the persistent detail panel and stale Open alert helper without adding summary card calculations.
 * Codex kept status updates frontend-only and did not add API routes, localStorage, backend code, new dependencies, or README changes.
+* Codex implemented Phase 5 as an additive summary-card layer above the existing table/detail grid.
+* Codex expanded `alertSummary.ts` to calculate visible-set summary counts and reused `isStaleOpenAlert()`.
+* Codex kept summary cards informational only and did not add clickable card filters or chart dependencies.
+* Codex did not change README, add backend/API/localStorage, or continue into Phase 6.
 
 ## Planning Decisions Made
 
