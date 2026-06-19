@@ -4,33 +4,56 @@
 
 ## Current Phase
 
-**Planning / Pre-implementation**
+**Ready for Phase 1 — Mock alert data and TypeScript model**
 
-Implementation has not started yet.
+Phase 0 is complete.
 
 The immediate next action is:
 
 ```text
-Begin Phase 0 — Repo/bootstrap and scaffold
+Begin Phase 1 — Mock alert data and TypeScript model
 ```
 
 ## Completed Implementation Phases
 
-None yet.
+* Phase 0 — Repo/bootstrap and scaffold
 
 ## Known Working Features
 
-None yet.
+* Basic Next.js app scaffold exists.
+* TypeScript is configured with strict settings.
+* Modern App Router structure is present under `src/app`.
+* CSS Modules are available and used by the placeholder page.
+* The placeholder page renders:
 
-No application implementation has started, so no runtime behavior has been validated.
+```text
+Alert Triage Mini-View
+Phase 0 scaffold ready.
+```
+
+## Validation Results
+
+Phase 0 validation completed:
+
+```bash
+npm run lint
+npm run build
+```
+
+Both commands completed successfully.
 
 ## Known Issues
 
-* No code scaffold has been validated yet.
-* No local build or lint command has been run yet.
 * No mock alert data exists yet.
-* No UI components exist yet.
+* No dashboard UI components exist yet.
 * No backend production artifacts exist yet.
+* `npm install` reported 2 moderate severity dependency audit findings. No audit fix was run because dependency upgrades are outside Phase 0 scope.
+
+## AI Usage Notes
+
+* Codex implemented Phase 0 manually because the repo was non-empty and `create-next-app` could risk overwriting existing planning files.
+* Codex preserved existing planning markdown files and only updated `PROJECT_STATE.md`.
+* Codex added a minimal Next.js, TypeScript, App Router, CSS Modules, and ESLint scaffold without dashboard functionality.
 
 ## Planning Decisions Made
 
@@ -361,4 +384,3 @@ Future AI coding-agent usage should be recorded after each phase, especially:
 * what validation was run
 * where output was reviewed or corrected
 * known issues or follow-up actions
-
